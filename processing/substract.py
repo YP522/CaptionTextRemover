@@ -5,18 +5,18 @@
 # 4. Save the new image
 from PIL import Image
 
-def mix_colors_rgba(colorRGBA1, colorRGBA2):
+def mix_colors_rgba(color_rgba_1, color_rgba_2):
     """
     > The resulting color is the color of the first pixel, with the transparency of the second pixel
     
-    :param colorRGBA1: The first color to mix
-    :param colorRGBA2: The color you want to blend with the background
+    :param color_rgba_1: The first color to mix
+    :param color_rgba_2: The color you want to blend with the background
     :return: A tuple of 4 integers.
     """
-    alpha = 255 - ((255 - colorRGBA1[3]) * (255 - colorRGBA2[3]) / 255)
-    red   = (colorRGBA1[0] * (255 - colorRGBA2[3]) + colorRGBA2[0] * colorRGBA2[3]) / 255
-    green = (colorRGBA1[1] * (255 - colorRGBA2[3]) + colorRGBA2[1] * colorRGBA2[3]) / 255
-    blue  = (colorRGBA1[2] * (255 - colorRGBA2[3]) + colorRGBA2[2] * colorRGBA2[3]) / 255
+    alpha = 255 - ((255 - color_rgba_1[3]) * (255 - color_rgba_2[3]) / 255)
+    red   = (color_rgba_1[0] * (255 - color_rgba_2[3]) + color_rgba_2[0] * color_rgba_2[3]) / 255
+    green = (color_rgba_1[1] * (255 - color_rgba_2[3]) + color_rgba_2[1] * color_rgba_2[3]) / 255
+    blue  = (color_rgba_1[2] * (255 - color_rgba_2[3]) + color_rgba_2[2] * color_rgba_2[3]) / 255
     return (int(red), int(green), int(blue), int(alpha))
 
 
@@ -38,7 +38,7 @@ def create_image(image,estimated_colour_of_alpha_layer):
 
         data_new_image.append( mix_colors_rgba(color, estimated_colour_of_alpha_layer) )
 
-    new_image = Image.new(image.mode,image.size).congreen("RGBA")
+    new_image = Image.new(image.mode,image.size).convert("RGBA")
     new_image.putdata(data_new_image)
     
     return new_image

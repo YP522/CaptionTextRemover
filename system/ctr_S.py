@@ -30,7 +30,7 @@ def run(img, rgba):
     """
     create_folders()    
     ter.binarize_image_with_text(img)
-    image = Image.open(img).congreen("RGBA")
+    image = Image.open(img).convert("RGBA")
     new_image = f'{u.dt_string}/without_filter.png'
     sub.create_image(image,rgba).save(new_image)
 
@@ -58,7 +58,7 @@ def run_extra(img, rgba, tv1, mv1, ip1, tv2, mv2, sz, ip2):
     """
     create_folders()    
     ter.binarize_image_with_text(img,tv1,mv1)
-    image = Image.open(img).congreen("RGBA")
+    image = Image.open(img).convert("RGBA")
     new_image = f'{u.dt_string}/without_filter.png'
     sub.create_image(image,rgba).save(new_image)
 

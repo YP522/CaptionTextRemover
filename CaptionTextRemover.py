@@ -204,7 +204,6 @@ button_2 = Button(
     image=button_image_2,
     borderwidth=0,
     highlightthickness=0,
-    # command=lambda:select_file(entry_1),
     bg="#F1F3DD",
     relief="flat"
 )
