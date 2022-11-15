@@ -15,10 +15,10 @@
 
 ## How to run ?
 First, extract the caption text with a raster graphics editor.
-Then, run this selection with `py .\ctr.py run-extra 'img.png' 0 0 0 150 120 255 32 0 150 2 11` (for example)
+Then, run this selection with `py .\ctr.py run-extra 'img.png' 0 0 0 150 221 120 255 32 0 150 2 11` (for example)
 
 Download Source Code Project, Install dependencies and run this command :
-`py .\ctr.py run-extra image_path red green blue alpha threshold1 minval1 inpaintmethod1 threshold2 minval2 size inpaintmethod2`
+`py .\ctr.py run-extra image_path red green blue alpha value_correction threshold1 minval1 inpaintmethod1 threshold2 minval2 size inpaintmethod2`
 
 or download executable here :
 https://ypetit.web-edu.fr/CaptionTextRemover/download/0.0.0/CaptionTextRemover.exe
@@ -41,10 +41,10 @@ Learn about author(s)
 `py .\ctr.py credits`
 
 Run ctr with 1 image file
-`py .\ctr.py run media_path`
+`py .\ctr.py run image_path red green blue alpha value_correction`
 
 Run ctr with 1 image file
-`py .\ctr.py run-extra image_path red green blue alpha threshold1 minval1 inpaintmethod1 threshold2 minval2 size inpaintmethod2`
+`py .\ctr.py run-extra image_path red green blue alpha value_correction threshold1 minval1 inpaintmethod1 threshold2 minval2 size inpaintmethod2`
 
 ## Disclaimer
 ### Code
