@@ -43,15 +43,15 @@ class main():
 
     # Start the CTR execution with your image and rgba color estimation
     @app.command()
-    def run(img: str, r: int, g: int, b: int, a:int):
-        alpha = (a+221)
+    def run(img: str, r: int, g: int, b: int, a:int, value_correction:int):
+        alpha = (a+value_correction)
         rgba = r,g,b,-alpha
         s.run(img, rgba)
         
     # Start the CTR execution with your image and rgba color estimation
     @app.command()
-    def run_extra(img: str, r: int, g: int, b: int, a:int, tv1:int, mv1:int, ip1:int, tv2:int, mv2:int, sz:int, ip2:int):
-        alpha = (a+221)
+    def run_extra(img: str, r: int, g: int, b: int, a:int, value_correction:int, tv1:int, mv1:int, ip1:int, tv2:int, mv2:int, sz:int, ip2:int):
+        alpha = (a+value_correction)
         rgba = r,g,b,-alpha
         s.run_extra(img, rgba, tv1, mv1, ip1, tv2, mv2, sz, ip2)
 

@@ -60,7 +60,7 @@ def start_program():
     options = format(entry_1.get())
 
     opt = options.split()
-    main.run_extra(format(entry_2.get()), int(opt[0]), int(opt[1]), int(opt[2]), int(opt[3]), int(opt[4]), int(opt[5]), int(opt[6]), int(opt[7]), int(opt[8]), int(opt[9]), int(opt[10]))
+    main.run_extra(format(entry_2.get()), int(opt[0]), int(opt[1]), int(opt[2]), int(opt[3]), int(opt[4]), int(opt[5]), int(opt[6]), int(opt[7]), int(opt[8]), int(opt[9]), int(opt[10]), int(opt[11]))
 
     dialog()
 
@@ -207,12 +207,6 @@ button_2 = Button(
     bg="#F1F3DD",
     relief="flat"
 )
-# button_2.place(
-#     x=783.9999999999999,
-#     y=319.0,
-#     width=24.0,
-#     height=22.0
-# )
 
 entry_image_2 = PhotoImage(
     data=b64_entry_2)

@@ -5,7 +5,7 @@
  Remove a Caption-Text from a picture
 
 <p align="center">
-  <img src="https://ypetit.web-edu.fr/CaptionTextRemover/CaptionTextRemover_banner.png" title="CaptionTextRemover">
+  <img src="https://ypetit.web-edu.fr/captiontextremover/CaptionTextRemover_banner.png" title="CaptionTextRemover">
 </p>
 
 ## Features
@@ -42,6 +42,9 @@ Learn about author(s)
 
 Run ctr with 1 image file
 `py .\ctr.py run media_path`
+
+Run ctr with 1 image file
+`py .\ctr.py run-extra image_path red green blue alpha threshold1 minval1 inpaintmethod1 threshold2 minval2 size inpaintmethod2`
 
 ## Disclaimer
 ### Code
