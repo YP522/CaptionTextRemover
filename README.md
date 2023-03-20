@@ -21,10 +21,10 @@ Download Source Code Project, Install dependencies and run this command :
 `py .\ctr.py run-extra image_path red green blue alpha value_correction threshold1 minval1 inpaintmethod1 threshold2 minval2 size inpaintmethod2`
 
 or download executable here :
-https://ypetit.web-edu.fr/CaptionTextRemover/download/0.0.0/CaptionTextRemover.exe
+https://ypetit.web-edu.fr/captiontextremover/download/0.0.0/CaptionTextRemover.exe
 
 ## Learn how to use ?
-Read the tutorial step by step here : https://ypetit.web-edu.fr/CaptionTextRemover/get-started/
+Read the tutorial step by step here : https://ypetit.web-edu.fr/captiontextremover/get-started/
 Running may take a few minutes to a few hours
 
 ## Commands
