@@ -4,6 +4,11 @@
 
  Remove a Caption-Text from a picture
 
+> ## This project is no longer actively maintained
+>
+> Originally, it was an experimental test aimed at removing a "caption-text" filter from a snap, while avoiding methods where the values would be too far apart, like the risk of "content-fill aware" applied to the entire banner, for example, where the deviations from the original colors are significant. However, this project is currently not actively maintained. Nevertheless, it may receive updates in the future.
+
+
 <p align="center">
   <img src="https://ypetit.web-edu.fr/captiontextremover/CaptionTextRemover_banner.png" title="CaptionTextRemover">
 </p>
